@@ -1,11 +1,27 @@
 import "./style/home.scss";
 
-const Home = function () {
+import Header from "./Header";
+import Navigation from "./Navigation";
+import { Element } from "react-scroll";
+
+function Home() {
   return (
-    <div className="home">
-      <h1 className="home-title">Jagoda Wochlik</h1>
-    </div>
+    <>
+      <Navigation />
+      <Header />
+      <Element name="about">
+        <section>
+          <h2>About Section</h2>
+        </section>
+      </Element>
+
+      <Element name="services">
+        <section>
+          <h2>Services Section</h2>
+        </section>
+      </Element>
+    </>
   );
-};
+}
 
 export default Home;
