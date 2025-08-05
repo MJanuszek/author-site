@@ -42,6 +42,17 @@
   padding: 2rem;
   border-bottom: 1px solid black;
 }
+.buy {
+  position: fixed;
+  top: 80vh; // 👈 ustawia pozycję od góry
+  right: 2rem; // 👈 odsuwa od prawej (lub zmień na `left`)
+  font-size: 1.2rem;
+  z-index: 10; // 👈 unosi nad resztę
+  background-color: $title-color01; // tylko do testu, żeby zobaczyć go wyraźnie
+  color: white; // kontrast
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
 
 .footer {
   display: flex;

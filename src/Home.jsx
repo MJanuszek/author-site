@@ -3,6 +3,7 @@ import "./style/home.scss";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Books from "./Books";
+
 import Footer from "./Footer";
 import { Element } from "react-scroll";
 
@@ -63,6 +64,7 @@ function Home() {
           <Books />
         </section>
       </Element>
+
       <Footer />
     </div>
   );

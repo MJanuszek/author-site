@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  // border: 4px solid blue;
 }
 
 .books-title {
@@ -17,10 +16,10 @@
 .book {
   min-height: 70vh;
   height: auto;
-  width: 100%;
+  width: 80%;
   padding: 1rem;
   background-image: url("../assets/bg04.png");
-  // border: 1px solid black;
+  background-repeat: no-repeat;
   border-radius: 12px;
   margin: 1rem auto;
   display: flex;
@@ -30,12 +29,11 @@
 .book-description {
   padding: 2rem;
   font-size: 1.4rem;
-  max-width: 60vw;
+  max-width: 50vw;
   font-family: $descriptionFont02;
 }
 .new-book {
   position: relative; // Required for absolute children
-  padding-top: 2rem; // Optional: gives space so label doesn't overlap cover
 }
 .new {
   position: absolute;
@@ -44,7 +42,7 @@
   background-color: crimson;
   color: white;
   padding: 0.3rem 0.6rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   border-radius: 4px;
   z-index: 2;

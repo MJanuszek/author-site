@@ -12,6 +12,9 @@ function Navigation() {
       <ScrollLink className="link-nav" to="books" smooth={true} duration={500}>
         Książki
       </ScrollLink>
+      <ScrollLink className="link-nav" to="quotes" smooth={true} duration={500}>
+        Cytaty
+      </ScrollLink>
 
       <RouterLink className="link-nav" to="/contact">
         Contact
