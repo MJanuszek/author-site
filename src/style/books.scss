@@ -10,7 +10,7 @@
 
 .books-title {
   font-family: $titleFont02;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.4rem;
 }
 .book {
@@ -28,9 +28,10 @@
 }
 .book-description {
   padding: 2rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   max-width: 50vw;
-  font-family: $descriptionFont02;
+  font-family: $descriptionFont03;
+  letter-spacing: 0.1rem;
 }
 .new-book {
   position: relative; // Required for absolute children
@@ -50,7 +51,7 @@
 }
 .book-cover {
   width: 100%; // Take full width of the container
-  max-width: 300px; // Limit so it doesn’t grow too big
+  max-width: 270px; // Limit so it doesn’t grow too big
   aspect-ratio: 2 / 3;
   background-position: center;
   background-size: cover;
@@ -89,7 +90,7 @@
 
 @media (max-width: 767px) {
   .book {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;

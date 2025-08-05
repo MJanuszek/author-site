@@ -19,7 +19,7 @@ function Navigation() {
       </ScrollLink>
 
       <RouterLink className="link-nav" to="/contact">
-        Contact
+        Kontact
       </RouterLink>
     </nav>
   );

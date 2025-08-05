@@ -5,11 +5,8 @@
   box-sizing: border-box;
 }
 
-.home-title {
-  font-size: 3rem;
-}
 .header-title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: $titleFont02;
   letter-spacing: 0.7rem;
   color: $title-color01;
@@ -24,14 +21,14 @@
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../assets/Header03.png");
+  background-image: url("../assets/header03.png");
   background-position: center;
 }
 .inspiration {
   min-height: 40vh;
   // font-family: $accentFont01;
   font-family: $titleFont02;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +51,8 @@
 }
 .about-author {
   min-height: 90vh;
-  font-family: $descriptionFont01;
+  // font-family: $descriptionFont01;
+  font-family: $descriptionFont03;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid black;
@@ -63,18 +61,18 @@
 .about-description {
   width: 50%;
   line-height: 1.5;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   padding: 3rem;
 }
 .buy {
   position: fixed;
   top: 87vh;
   right: 1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   z-index: 10;
   background-color: $title-color01; // tylko do testu, żeby zobaczyć go wyraźnie
   color: white; // kontrast
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-family: $accentFont01;
@@ -98,7 +96,7 @@
 
 @media (max-width: 767px) {
   .home-title {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -115,7 +113,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .home-title {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
   }
 
   .header {
@@ -130,7 +128,7 @@
 
 @media (min-width: 1024px) {
   .home-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .header {

@@ -7,7 +7,7 @@ const Buy = function () {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Zobacz gdzie kupić
+      Gdzie kupić
     </a>
   );
 };

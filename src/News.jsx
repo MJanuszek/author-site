@@ -16,7 +16,7 @@ const News = function () {
         </p>
       </div>
       <div className="event-new-book">
-        <h1>Nowy tytuł już w listopadzie!</h1>
+        <h1>Nowy tytuł już w listopadzie '25!</h1>
         <div className="new-book-cover"></div>
         <p className="new-book-description">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae culpa
