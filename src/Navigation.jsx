@@ -8,7 +8,9 @@ function Navigation() {
       <ScrollLink className="link-nav" to="about" smooth={true} duration={500}>
         O autorce
       </ScrollLink>
-
+      <ScrollLink className="link-nav" to="news" smooth={true} duration={500}>
+        Aktualności
+      </ScrollLink>
       <ScrollLink className="link-nav" to="books" smooth={true} duration={500}>
         Książki
       </ScrollLink>

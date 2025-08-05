@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
+import "./style/contact.scss";
 
 function Contact() {
   return (
-    <section>
-      <h1>Contact Page</h1>
-      <p>Email us at: contact@example.com</p>
-
+    <div className="contact">
       <div>
-        <Link to="/">← Back to Home</Link>
+        <Link to="/" className="gohome">
+          ← Strona Główna
+        </Link>
       </div>
-    </section>
+      <div className="contact-into">
+        <h1>Napisz do mnie</h1>
+        <p>: contact@example.com</p>
+      </div>
+    </div>
   );
 }
 

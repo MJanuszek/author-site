@@ -59,10 +59,9 @@ const Books = function () {
           temporibus molestias.
         </div>
       </div>
-
       <Quotes />
       <div className="book">
-        <div className="book-cover jakoś"></div>
+        <div className="book-cover każdego"></div>
         <div className="book-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
           reprehenderit consequatur suscipit atque autem odit aut, architecto
@@ -79,7 +78,7 @@ const Books = function () {
         </div>
       </div>
       <div className="book">
-        <div className="book-cover jakoś"></div>
+        <div className="book-cover dziewczyna"></div>
         <div className="book-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
           reprehenderit consequatur suscipit atque autem odit aut, architecto
@@ -96,7 +95,7 @@ const Books = function () {
         </div>
       </div>
       <div className="book">
-        <div className="book-cover jakoś"></div>
+        <div className="book-cover miłość"></div>
         <div className="book-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
           reprehenderit consequatur suscipit atque autem odit aut, architecto
@@ -113,7 +112,7 @@ const Books = function () {
         </div>
       </div>
       <div className="book">
-        <div className="book-cover jakoś"></div>
+        <div className="book-cover tajemnica"></div>
         <div className="book-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
           reprehenderit consequatur suscipit atque autem odit aut, architecto
@@ -130,7 +129,7 @@ const Books = function () {
         </div>
       </div>
       <div className="book">
-        <div className="book-cover jakoś"></div>
+        <div className="book-cover róże"></div>
         <div className="book-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
           reprehenderit consequatur suscipit atque autem odit aut, architecto
@@ -147,7 +146,7 @@ const Books = function () {
         </div>
       </div>
       <div className="book">
-        <div className="book-cover jakoś"></div>
+        <div className="book-cover milion"></div>
         <div className="book-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
           reprehenderit consequatur suscipit atque autem odit aut, architecto

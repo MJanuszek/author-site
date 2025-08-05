@@ -1,0 +1,25 @@
+@import "colors&fonts";
+
+.contact {
+  min-height: 100vh;
+  background-image: url("../assets/bg01.png");
+  display: flex;
+  flex-direction: column;
+  font-family: $titleFont02;
+}
+
+.contact-into {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14vh;
+  line-height: 3rem;
+}
+
+.gohome {
+  font-size: 2rem;
+  text-decoration: none;
+  &:hover {
+    color: red;
+  }
+}
