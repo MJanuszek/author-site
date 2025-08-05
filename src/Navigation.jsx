@@ -1,19 +1,21 @@
+import "./style/navigation.scss";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 
 function Navigation() {
   return (
-    <nav>
-      {/* Scroll links */}
-      <ScrollLink to="about" smooth={true} duration={500}>
-        About
+    <nav className="nav-top">
+      <ScrollLink className="link-nav" to="about" smooth={true} duration={500}>
+        O autorce
       </ScrollLink>
 
-      <ScrollLink to="services" smooth={true} duration={500}>
-        Services
+      <ScrollLink className="link-nav" to="books" smooth={true} duration={500}>
+        Książki
       </ScrollLink>
 
-      <RouterLink to="/contact">Contact</RouterLink>
+      <RouterLink className="link-nav" to="/contact">
+        Contact
+      </RouterLink>
     </nav>
   );
 }

@@ -1,0 +1,84 @@
+@import "colors&fonts";
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  // border: 4px solid blue;
+}
+
+.books-title {
+  font-family: $titleFont02;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+}
+.book {
+  min-height: 70vh;
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  background-image: url("../assets/bg04.png");
+  // border: 1px solid black;
+  border-radius: 12px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-description {
+  padding: 2rem;
+  font-size: 1.4rem;
+  max-width: 60vw;
+  font-family: $descriptionFont02;
+}
+.new-book {
+  position: relative; // Required for absolute children
+  padding-top: 2rem; // Optional: gives space so label doesn't overlap cover
+}
+.new {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: crimson;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.book-cover {
+  width: 100%; // Take full width of the container
+  max-width: 300px; // Limit so it doesn’t grow too big
+  aspect-ratio: 2 / 3;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.495);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.jakoś {
+  background-image: url("../assets/covers/jakoś.jpg");
+}
+.jesteś {
+  background-image: url("../assets/covers/jesteś.jpg");
+}
+.wszystkie {
+  background-image: url("../assets/covers/wszystkie.jpg");
+}
+
+@media (max-width: 767px) {
+  .book {
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .book-description {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,28 @@
+@import "colors&fonts";
+
+.nav-top {
+  background-color: #fff;
+  width: 100vw;
+  position: fixed;
+  height: 9vh;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.link-nav {
+  padding: 0.5rem;
+  font-family: $titleFont02;
+  font-size: 2rem;
+  color: $title-color01;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  &:hover {
+    color: $shadowColor01;
+    text-shadow: 2px 2px 4px rgb(145, 9, 9);
+  }
+}
