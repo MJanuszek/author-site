@@ -5,25 +5,6 @@
   box-sizing: border-box;
 }
 
-.header-title {
-  font-size: 3rem;
-  font-family: $titleFont02;
-  letter-spacing: 0.7rem;
-  color: $title-color01;
-  text-shadow: 2px 2px 2px rgb(29, 18, 145);
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../assets/header03.png");
-  background-position: center;
-}
 .inspiration {
   min-height: 40vh;
   // font-family: $accentFont01;
@@ -79,17 +60,6 @@
   &:hover {
     background-color: #e61a1a;
   }
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 7vh;
-  background-color: $darkBgColor;
-  color: white;
-  font-size: 1.2rem;
-  font-family: $accentFont01;
 }
 
 //  @media

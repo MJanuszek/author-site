@@ -1,5 +1,5 @@
 import "./style/books.scss";
-import Quotes from "./Quotes";
+
 import Buy from "./Buy";
 
 const Books = function () {
@@ -59,7 +59,6 @@ const Books = function () {
           temporibus molestias.
         </div>
       </div>
-      <Quotes />
       <div className="book">
         <div className="book-cover każdego"></div>
         <div className="book-description">

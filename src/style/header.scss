@@ -1,0 +1,20 @@
+@import "colors&fonts";
+
+.header-title {
+  font-size: 3rem;
+  font-family: $titleFont02;
+  letter-spacing: 0.7rem;
+  color: $title-color01;
+}
+
+.header-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/header03.png");
+  background-position: center;
+}

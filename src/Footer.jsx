@@ -1,4 +1,4 @@
-import "./style/home.scss";
+import "./style/footer.scss";
 const Footer = function () {
   return <div className="footer">to jest footer/copyright</div>;
 };

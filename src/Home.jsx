@@ -2,8 +2,10 @@ import "./style/home.scss";
 
 import Header from "./Header";
 import Navigation from "./Navigation";
+import PlotExtract from "./PlotExtract";
 import Books from "./Books";
 import News from "./News";
+import Quotes from "./Quotes";
 import Footer from "./Footer";
 import { Element } from "react-scroll";
 
@@ -42,6 +44,7 @@ function Home() {
           </div>
         </section>
       </Element>
+      <PlotExtract />
       <Element name="news">
         <section>
           <News />
@@ -52,7 +55,7 @@ function Home() {
           <Books />
         </section>
       </Element>
-
+      <Quotes />
       <Footer />
     </div>
   );
