@@ -15,10 +15,9 @@ function Home() {
       <Navigation />
       <Header />
       <div className="inspiration">
-        <p>
-          Czytanie książek to najpiękniejsza zabawa, jaką sobie ludzkość
-          wymyśliła.
-        </p>
+        <p>Radość pisania.</p>
+        <p>Możność utrwalania.</p>
+        <p>Zemsta ręki śmiertelnej.</p>
         <p>– Wisława Szymborska</p>
       </div>
 

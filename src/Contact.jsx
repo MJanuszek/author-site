@@ -13,7 +13,7 @@ function Contact() {
         </div>
         <div className="contact-into">
           <h1>Napisz do mnie</h1>
-          <p>: contact@example.com</p>
+          <p>j.wochlik@wp.pl</p>
         </div>
       </div>
       <Footer />
