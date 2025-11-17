@@ -1,28 +1,50 @@
 @import "colors&fonts";
 
+/* ====== MOBILE FIRST (telefon) ====== */
+
 .nav-top {
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
   position: fixed;
-  height: 9vh;
+  top: 0;
+  left: 0;
   border-bottom: 1px solid black;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  z-index: 888;
+  flex-wrap: wrap;
+
   &:hover {
     cursor: pointer;
   }
-  z-index: 888;
 }
 
 .link-nav {
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
   font-family: $titleFont02;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: $title-color01;
   text-decoration: none;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
   &:hover {
     text-shadow: 2px 2px 4px rgb(235, 0, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-top {
+    height: 9vh;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 0 2rem;
+  }
+
+  .link-nav {
+    font-size: 1.3rem;
+    padding: 0.5rem;
   }
 }
