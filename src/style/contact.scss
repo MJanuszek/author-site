@@ -1,25 +1,78 @@
 @import "colors&fonts";
 
 .contact {
-  height: 90vh;
+  min-height: 90vh;
   background-image: url("../assets/bg01.png");
+  background-size: cover;
+  background-position: center;
+
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
   font-family: $titleFont02;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.contact-item {
+  border-bottom: 1px solid black;
+  padding-bottom: 3vh;
+}
+
+.gohome {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: $title-color01;
+
+  &:hover {
+    color: red;
+  }
+}
+li {
+  list-style: none;
 }
 
 .contact-into {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 14vh;
-  line-height: 3rem;
+  line-height: 2.4rem;
+
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-family: $descriptionFont03;
+  }
 }
 
-.gohome {
-  font-size: 2rem;
-  text-decoration: none;
-  &:hover {
-    color: red;
+@media (min-width: 768px) {
+  .gohome {
+    font-size: 1.6rem;
+  }
+
+  .contact-into h1 {
+    font-size: 2.4rem;
+  }
+
+  .contact-into p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gohome {
+    font-size: 1.8rem;
+  }
+
+  .contact-into h1 {
+    font-size: 3rem;
   }
 }
