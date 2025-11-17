@@ -4,80 +4,83 @@ import Footer from "./Footer";
 
 function Contact() {
   return (
-    <div className="contact-page">
-      <div className="contact">
-        <div>
-          <Link to="/" className="gohome">
-            ← Strona Główna
-          </Link>
-        </div>
+    <div className="contact">
+      <Link to="/" className="gohome">
+        ← Strona Główna
+      </Link>
 
-        <div className="contact-info">
-          <div className="contact-item">
-            <h2>Email</h2>
+      <div className="contact-card">
+        <p className="contact-subtitle">
+          Pisz śmiało, jeśli masz pytania o książki, bibliotekę albo moje
+          projekty.
+        </p>
+
+        <div className="contact-grid">
+          {/* Email */}
+          <a
+            className="contact-block contact-link"
+            href="mailto:j.wochlik@wp.pl"
+          >
+            <h2>📧 Email</h2>
             <p>j.wochlik@wp.pl</p>
-          </div>
+          </a>
 
-          <div className="contact-item">
-            <h2>Instagram</h2>
-            <a
-              href="https://www.instagram.com/jagodawochlik/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Jagoda Wochlik
-            </a>
-          </div>
+          {/* Instagram – podmień USERNAME_HERE na właściwy nick */}
+          <a
+            className="contact-block contact-link"
+            href="https://www.instagram.com/jagodawochlik/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>📷 Instagram</h2>
+            <p>Jagoda Wochlik</p>
+          </a>
 
-          <div className="contact-item">
-            <h2>Facebook</h2>
-            <a
-              href="https://www.facebook.com/p/Biblioteka-Edgara-100048065003586/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Biblioteka Edgara
-            </a>
-          </div>
+          {/* Facebook */}
+          <a
+            className="contact-block contact-link"
+            href="https://www.facebook.com/p/Biblioteka-Edgara-100048065003586/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>📘 Facebook</h2>
+            <p>Biblioteka Edgara</p>
+          </a>
 
-          <div className="contact-item">
-            <h2>Blog</h2>
-            <a
-              href="http://biblioteka-edgara.blogspot.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              biblioteka-edgara.blogspot.com
-            </a>
-          </div>
+          {/* Blog */}
+          <a
+            className="contact-block contact-link"
+            href="http://biblioteka-edgara.blogspot.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>📝 Blog</h2>
+            <p>biblioteka-edgara.blogspot.com</p>
+          </a>
 
-          <div className="contact-item">
-            <h2>YouTube</h2>
-            <ul className="yt-list">
-              <li>
-                <a
-                  href="https://www.youtube.com/@bibliotekaedgara5388"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Biblioteka Edgara — kanał książkowy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/@Czasnadram%C4%99"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Czas na dramę — kanał dramowy
-                </a>
-              </li>
-            </ul>
-          </div>
+          {/* YouTube – książkowy */}
+          <a
+            className="contact-block contact-link"
+            href="https://www.youtube.com/@bibliotekaedgara5388"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>📚 YouTube – książki</h2>
+            <p>Biblioteka Edgara</p>
+          </a>
+
+          {/* YouTube – dramowy */}
+          <a
+            className="contact-block contact-link"
+            href="https://www.youtube.com/@Czasnadram%C4%99"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>🎭 YouTube – dramy</h2>
+            <p>Czas na dramę</p>
+          </a>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
