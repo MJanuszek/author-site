@@ -5,40 +5,54 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .books-title {
   font-family: $titleFont02;
-  font-size: 2rem;
+  font-size: 1.6rem; // trochę mniejsze na mobilce
   letter-spacing: 0.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
+
+/* ====== MOBILE FIRST – TELEFON ====== */
+
 .book {
-  min-height: 70vh;
-  height: auto;
-  width: 80%;
-  padding: 1rem;
+  min-height: auto;
+  width: 100%;
+  max-width: 1100px;
+  padding: 1.5rem 1rem;
   background-image: url("../assets/bg04.png");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 12px;
   margin: 1rem auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column; // MOBILE: kolumna
   align-items: center;
+  justify-content: flex-start;
 }
+
 .book-description {
-  padding: 2rem;
-  font-size: 1rem;
-  max-width: 50vw;
+  padding: 1.5rem 0 0;
+  font-size: 0.95rem;
+  max-width: 700px;
+  width: 100%;
   font-family: $descriptionFont03;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.6;
+  text-align: justify;
 }
+
 .desc {
-  padding: 0.7rem;
+  padding: 0.7rem 0;
 }
+
 .new-book {
-  position: relative; // Required for absolute children
+  position: relative;
 }
+
 .new {
   position: absolute;
   top: 0.5rem;
@@ -46,15 +60,16 @@
   background-color: crimson;
   color: white;
   padding: 0.3rem 0.6rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   border-radius: 4px;
   z-index: 2;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
 .book-cover {
-  width: 100%; // Take full width of the container
-  max-width: 270px; // Limit so it doesn’t grow too big
+  width: 70vw; // na telefonie względem ekranu
+  max-width: 270px; // ale nie większe niż 270px
   aspect-ratio: 2 / 3;
   background-position: center;
   background-size: cover;
@@ -62,7 +77,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.495);
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 1.5rem; // odstęp od opisu na mobilce
 }
+
+/* Okładki */
 .jakoś {
   background-image: url("../assets/covers/jakoś.jpg");
 }
@@ -91,14 +109,52 @@
   background-image: url("../assets/covers/milion.jpg");
 }
 
-@media (max-width: 767px) {
-  .book {
-    font-size: 1rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+/* ====== TABLET (>= 768px) ====== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .books-title {
+    font-size: 1.8rem;
   }
+
+  .book {
+    flex-direction: row; // obok siebie: okładka + opis
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .book-cover {
+    margin-bottom: 0;
+    margin-right: 2rem;
+    width: 100%;
+    max-width: 270px;
+  }
+
   .book-description {
-    width: 100vw;
+    padding: 0;
+    max-width: 50%;
+    font-size: 1rem;
+  }
+}
+
+/* ====== DESKTOP (>= 1024px) ====== */
+
+@media (min-width: 1024px) {
+  .books-title {
+    font-size: 2rem;
+  }
+
+  .books-container {
+    padding: 3rem 2rem;
+  }
+
+  .book {
+    padding: 3rem;
+  }
+
+  .book-description {
+    max-width: 50vw;
+    font-size: 1.05rem;
+    letter-spacing: 0.1rem;
   }
 }
