@@ -10,13 +10,11 @@
 
 .books-title {
   font-family: $titleFont02;
-  font-size: 1.6rem; // trochę mniejsze na mobilce
+  font-size: 1.6rem;
   letter-spacing: 0.4rem;
   text-align: center;
   margin-bottom: 1.5rem;
 }
-
-/* ====== MOBILE FIRST – TELEFON ====== */
 
 .book {
   min-height: auto;
@@ -29,7 +27,7 @@
   border-radius: 12px;
   margin: 1rem auto;
   display: flex;
-  flex-direction: column; // MOBILE: kolumna
+  flex-direction: column; // MOBILE
   align-items: center;
   justify-content: flex-start;
 }
@@ -68,8 +66,8 @@
 }
 
 .book-cover {
-  width: 70vw; // na telefonie względem ekranu
-  max-width: 270px; // ale nie większe niż 270px
+  width: 70vw;
+  max-width: 270px;
   aspect-ratio: 2 / 3;
   background-position: center;
   background-size: cover;

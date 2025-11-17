@@ -11,12 +11,12 @@
 .inspiration {
   min-height: 40vh;
   font-family: $titleFont02;
-  font-size: 1.1rem; // trochę mniejsze na telefonie
+  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 2rem; // 5rem było mega duże na małym ekranie
+  line-height: 2rem;
   padding: 2rem 1rem;
   text-align: center;
 
@@ -26,8 +26,8 @@
 }
 
 .foto {
-  width: 70vw; // szerokość względem ekranu na telefonie
-  max-width: 320px; // nie za duże na małych ekranach
+  width: 70vw;
+  max-width: 320px;
   aspect-ratio: 2 / 3;
   background-position: center;
   background-size: cover;
@@ -37,14 +37,14 @@
   border: 1px solid black;
   overflow: hidden;
   background-image: url("../assets/zdjęcie.jpg");
-  margin-bottom: 1.5rem; // odstęp od tekstu na mobilce
+  margin-bottom: 1.5rem;
 }
 
 .about-author {
-  min-height: auto; // na telefonie nie wymuszamy 90vh
+  min-height: auto;
   font-family: $descriptionFont03;
   display: flex;
-  flex-direction: column; // MOBILE: foto nad tekstem
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid black;
@@ -52,10 +52,10 @@
 }
 
 .about-description {
-  width: 100%; // pełna szerokość na telefonie
+  width: 100%;
   line-height: 1.6;
   font-size: 0.95rem;
-  padding: 0; // bez wielkiego paddingu na mobilce
+  padding: 0;
   text-align: justify;
 }
 

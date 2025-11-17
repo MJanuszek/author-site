@@ -9,29 +9,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
   font-size: 1.1rem;
   font-family: $accentFont01;
   z-index: 0;
-
-  //nakładka
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(255, 178, 246, 0.277); // przyciemnienie
-    z-index: 0; // pod tekstem, nad tłem
-  }
-
-  // treść nad nakładką
-  h1,
-  p {
-    position: relative;
-    z-index: 1;
-  }
 
   h1 {
     font-size: 1.2rem;

@@ -1,54 +1,54 @@
 @import "colors&fonts";
 
+/* ====== MOBILE FIRST (domyślnie: telefon) ====== */
+
 .news {
-  min-height: 100vh;
-  max-width: 70vw;
+  min-height: auto;
+  width: 100%;
+  max-width: 1100px;
   margin: 10px auto;
-  height: auto;
+  padding: 1.5rem 1rem;
   font-family: $titleFont02;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 .event {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   border-bottom: 2px solid black;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   margin-top: 1rem;
   border-radius: 4px;
 }
+
 .event-foto {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  width: 500px;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4 / 3;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  margin-bottom: 1.5rem;
 }
+
 .event-foto {
   background-image: url("../assets/cn8iN7Qt.jpg");
 }
 
 .event-description {
-  max-width: 50%;
-  font-size: 1rem;
-  padding: 3rem;
+  max-width: 100%;
+  font-size: 0.95rem;
+  padding: 0;
   font-family: $descriptionFont03;
+  line-height: 1.6;
+  text-align: justify;
 }
 
-// event 02 new book
-.new-book-cover {
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.new-book-cover {
-  background-image: url("../assets/new-book.png");
-  border-radius: 12px;
-}
 .event-new-book {
   display: flex;
   flex-direction: column;
@@ -56,14 +56,116 @@
   justify-content: center;
   border-bottom: 2px solid black;
   border-radius: 4px;
-  padding: 3rem;
+  padding: 2rem 1rem;
   margin-top: 2vh;
+  text-align: center;
+
   h1 {
-    padding: 2rem;
+    padding: 1rem 0;
+    font-size: 1.3rem;
   }
+
   p {
-    padding: 3rem;
-    font-size: 1rem;
+    padding: 1rem 0;
+    font-size: 0.95rem;
     font-family: $descriptionFont03;
+    line-height: 1.6;
+    max-width: 700px;
+    text-align: justify;
+  }
+}
+
+.new-book-cover {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  max-width: 300px;
+  aspect-ratio: 2 / 3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1.5rem;
+}
+
+.new-book-cover {
+  background-image: url("../assets/new-book.png");
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .news {
+    max-width: 80vw;
+    padding: 2rem 1.5rem;
+  }
+
+  .event {
+    flex-direction: row; // OBOK SIEBIE: foto + opis
+    align-items: flex-start;
+  }
+
+  .event-foto {
+    max-width: 350px;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .event-description {
+    max-width: 50%;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .event-new-book {
+    padding: 3rem 2rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      padding: 2rem 0;
+      font-size: 1rem;
+    }
+
+    .new-book-cover {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+/* ====== DESKTOP (>= 1024px) ====== */
+
+@media (min-width: 1024px) {
+  .news {
+    max-width: 70vw;
+    padding: 3rem 2rem;
+  }
+
+  .event {
+    padding: 3rem 2rem;
+  }
+
+  .event-foto {
+    max-width: 500px;
+    height: 500px;
+  }
+
+  .event-description {
+    max-width: 50%;
+    padding: 3rem;
+    font-size: 1.05rem;
+  }
+
+  .event-new-book {
+    padding: 4rem 3rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+    }
   }
 }
