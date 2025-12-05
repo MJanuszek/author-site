@@ -8,57 +8,6 @@
 
 /* ====== MOBILE FIRST (domyślne – telefon) ====== */
 
-.inspiration {
-  min-height: 40vh;
-  font-family: $titleFont02;
-  font-size: 1.1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 2rem;
-  padding: 2rem 1rem;
-  text-align: center;
-
-  p {
-    margin: 0.3rem 0;
-  }
-}
-
-.foto {
-  width: 70vw;
-  max-width: 320px;
-  aspect-ratio: 2 / 3;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.884);
-  border-radius: 22px;
-  border: 1px solid black;
-  overflow: hidden;
-  background-image: url("../assets/zdjęcie.jpg");
-  margin-bottom: 1.5rem;
-}
-
-.about-author {
-  min-height: auto;
-  font-family: $descriptionFont03;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid black;
-  padding: 2rem 1rem;
-}
-
-.about-description {
-  width: 100%;
-  line-height: 1.6;
-  font-size: 0.95rem;
-  padding: 0;
-  text-align: justify;
-}
-
 .buy {
   position: fixed;
   bottom: 1rem; // na telefonie lepiej trzymać przy dolnej krawędzi

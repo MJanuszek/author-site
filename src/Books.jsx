@@ -1,12 +1,14 @@
 import "./style/books.scss";
-
+import Navigation from "./Navigation";
 import Buy from "./Buy";
+import Quotes from "./Quotes";
 
 const Books = function () {
   return (
     <div className="books-container">
+      <Navigation />
       <h2 className="books-title">Książki</h2>
-
+      <Quotes />
       <div className="book new-book">
         <div className="new">Nowość</div>
         <div className="book-cover wszystkie"></div>

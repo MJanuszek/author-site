@@ -5,18 +5,19 @@ import { Link as RouterLink } from "react-router-dom";
 function Navigation() {
   return (
     <nav className="nav-top">
-      <ScrollLink className="link-nav" to="about" smooth={true} duration={500}>
+      <RouterLink className="link-nav" to="/about">
         O autorce
-      </ScrollLink>
-      <ScrollLink className="link-nav" to="news" smooth={true} duration={500}>
+      </RouterLink>
+      <RouterLink className="link-nav" to="/news">
         Aktualności
-      </ScrollLink>
-      <ScrollLink className="link-nav" to="books" smooth={true} duration={500}>
+      </RouterLink>
+      <RouterLink className="link-nav" to="/Books">
         Książki
-      </ScrollLink>
-      <ScrollLink className="link-nav" to="quotes" smooth={true} duration={500}>
+      </RouterLink>
+
+      {/* <ScrollLink className="link-nav" to="quotes" smooth={true} duration={500}>
         Cytaty
-      </ScrollLink>
+      </ScrollLink> */}
 
       <RouterLink className="link-nav" to="/contact">
         Media

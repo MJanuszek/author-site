@@ -1,8 +1,10 @@
 import "./style/news.scss";
+import Navigation from "./Navigation";
 
 const News = function () {
   return (
     <div className="news">
+      <Navigation />
       <h1>Aktualności</h1>
       <div className="event">
         <div className="event-foto"></div>
