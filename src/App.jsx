@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import About from "./About";
 import News from "./News";
 import Books from "./Books";
+import Playlist from "./Playlist";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/news" element={<News />} />
         <Route path="/books" element={<Books />} />
+        <Route path="/playlist" element={<Playlist />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

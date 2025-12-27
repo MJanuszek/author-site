@@ -5,21 +5,18 @@ const News = function () {
   return (
     <div className="news">
       <Navigation />
-      <h1>Aktualności</h1>
-      <div className="event">
-        <div className="event-foto"></div>
-        <p className="event-description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae culpa
-          aut iure aperiam ad? Nisi eum ad repellat, corporis fugiat facilis.
-          Enim repellendus, assumenda esse voluptatem distinctio, quas ab
-          suscipit labore eligendi odit ea tenetur sit natus numquam, quod qui
-          voluptates quia corrupti architecto doloremque ipsum voluptas neque.
-          Soluta, accusantium?
+      <div className="event-new-book">
+        <h1>Nowość 2026!</h1>
+        <div className="new-book-cover"></div>
+        <p>
+          W 2026 roku w wydawnictwie Lucky ukażą się dwie moje nowe powieści.
+          Wyczekujcie! Będzie się działo... zwłaszcza, jeśli tęsknicie za Leną,
+          Dagmarą i Zytą z "Jeszcze będziemy szczęśliwi" i Marcelem Raniuszkiem
+          oraz Augustem Piątkowskim z "Dziewczyny bez serca".{" "}
         </p>
       </div>
-      <div className="event-new-book">
-        <h1>Nowość już w 2026!</h1>
-        <div className="new-book-cover"></div>
+      <div className="event">
+        <div className="event-foto"></div>
       </div>
     </div>
   );

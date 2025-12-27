@@ -1,4 +1,4 @@
-import "./style/about.scss";
+import "./style/style.scss";
 import Navigation from "./Navigation";
 
 function About() {

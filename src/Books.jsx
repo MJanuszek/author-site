@@ -2,15 +2,43 @@ import "./style/books.scss";
 import Navigation from "./Navigation";
 import Buy from "./Buy";
 import Quotes from "./Quotes";
+import PlotExtract from "./PlotExtract";
 
 const Books = function () {
   return (
     <div className="books-container">
       <Navigation />
-      <h2 className="books-title">Książki</h2>
       <Quotes />
+      <PlotExtract />
       <div className="book new-book">
         <div className="new">Nowość</div>
+        <div className="book-cover jeszczeBedziemy"></div>
+        <div className="book-description">
+          <p className="desc">
+            DOROSŁOŚĆ PRZYCHODZI CZASEM ZA SZYBKO – ZANIM ZDĄŻYMY SPEŁNIĆ CHOĆ
+            JEDNO MARZENIE.
+          </p>
+          <p className="desc">
+            A później zostaje tylko lista niespełnionych pragnień.
+          </p>
+          <p className="desc">
+            Taka właśnie lista niezrealizowanych marzeń połączyła Lenę i
+            Wiktora. Ona zawsze była zbyt zajęta opieką nad innymi, by pomyśleć
+            o sobie. On postawił na karierę i rozwijanie własnej firmy.
+          </p>
+          <p className="desc">
+            Kiedy się poznają, oboje mają poczucie zmarnowanego życia. Dochodzą
+            więc do wniosku, że wspólnie zrealizują marzenia, które zawsze
+            odkładali. Każde z nich tworzy listę składającą się z kilku
+            wyjątkowych punktów.
+          </p>
+          <p className="desc">Czy można nadrobić stracony czas?</p>
+          <p className="desc">Czy da się uciec od zmarnowanego życia?</p>
+          <p className="desc">Czy spełnianie marzeń naprawdę uszczęśliwia?</p>
+          <p className="desc">Czy można dotknąć słońca?</p>
+        </div>
+      </div>
+      <div className="book">
         <div className="book-cover wszystkie"></div>
         <div className="book-description">
           <p className="desc">

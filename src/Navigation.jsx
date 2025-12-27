@@ -5,6 +5,9 @@ import { Link as RouterLink } from "react-router-dom";
 function Navigation() {
   return (
     <nav className="nav-top">
+      <RouterLink className="link-nav" to="/">
+        Home
+      </RouterLink>
       <RouterLink className="link-nav" to="/about">
         O autorce
       </RouterLink>
@@ -14,7 +17,7 @@ function Navigation() {
       <RouterLink className="link-nav" to="/Books">
         Książki
       </RouterLink>
-      <RouterLink className="link-nav" to="/Playlist">
+      <RouterLink className="link-nav" to="/playlist">
         Playlista ?? tu??
       </RouterLink>
 

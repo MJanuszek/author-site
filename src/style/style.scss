@@ -1,4 +1,7 @@
 @import "colors&fonts";
+
+// ---------about---------------
+
 .foto {
   width: 70vw;
   max-width: 320px;
@@ -11,11 +14,11 @@
   border: 1px solid black;
   overflow: hidden;
   background-image: url("../assets/zdjęcie.jpg");
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .about-author {
-  min-height: auto;
+  margin-top: 10vh;
   font-family: $descriptionFont03;
   display: flex;
   flex-direction: column;
@@ -26,9 +29,10 @@
 }
 
 .about-description {
-  width: 100%;
+  max-width: 60%;
   line-height: 1.6;
   font-size: 0.95rem;
   padding: 0;
   text-align: justify;
 }
+// --------- about end-------------
