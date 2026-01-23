@@ -193,13 +193,14 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
 
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
+  // max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4rem 1.5rem;
   background-image: url("../assets/bg07.png");
+
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
@@ -226,8 +227,8 @@ body {
 }
 
 .quotes-text {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.4;
   font-family: $descriptionFont03;
 
   /* prevent long strings from overflowing */
@@ -312,24 +313,18 @@ body {
   background-image: url("../assets/bg09.png");
   background-size: cover;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  /* key fixes:
-     - avoid 100vw overflow
-     - avoid hard 100vh cropping on mobile
-  */
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
+
   min-height: 100vh;
   min-height: 100dvh;
   height: auto;
 
-  margin: 0 auto;
   font-size: 1.1rem;
   font-family: $accentFont01;
   z-index: 0;

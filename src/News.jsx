@@ -7,7 +7,7 @@ const News = function () {
     <div className="news">
       <Navigation />
       <div className="event-new-book">
-        <h1>Nowość 2026!</h1>
+        <h1>Nowości 2026!</h1>
         {/* <div className="new-book-cover"></div> */}
         <p>
           W 2026 roku w wydawnictwie Lucky ukażą się dwie moje nowe powieści.
