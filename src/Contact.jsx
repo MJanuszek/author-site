@@ -1,13 +1,14 @@
-import { Link } from "react-router-dom";
 import "./style/contact.scss";
-import Footer from "./Footer";
+
+import Navigation from "./Navigation";
 
 function Contact() {
   return (
     <div className="contact">
-      <Link to="/" className="gohome">
+      {/* <Link to="/" className="gohome">
         ← Strona Główna
-      </Link>
+      </Link> */}
+      <Navigation />
 
       <div className="contact-card">
         <p className="contact-subtitle">

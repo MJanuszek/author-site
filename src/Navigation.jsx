@@ -1,5 +1,5 @@
 import "./style/navigation.scss";
-import { Link as ScrollLink } from "react-scroll";
+
 import { Link as RouterLink } from "react-router-dom";
 
 function Navigation() {
@@ -8,9 +8,7 @@ function Navigation() {
       <RouterLink className="link-nav" to="/">
         Home
       </RouterLink>
-      <RouterLink className="link-nav" to="/about">
-        O autorce
-      </RouterLink>
+
       <RouterLink className="link-nav" to="/news">
         Aktualności
       </RouterLink>
@@ -18,7 +16,7 @@ function Navigation() {
         Książki
       </RouterLink>
       <RouterLink className="link-nav" to="/playlist">
-        Playlista ?? tu??
+        Playlista
       </RouterLink>
 
       {/* <ScrollLink className="link-nav" to="quotes" smooth={true} duration={500}>

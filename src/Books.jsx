@@ -10,6 +10,8 @@ const Books = function () {
       <Navigation />
       <Quotes />
       <PlotExtract />
+
+      {/* 1) Jeszcze będziemy szczęśliwi */}
       <div className="book new-book">
         <div className="new">Nowość</div>
         <div className="book-cover jeszczeBedziemy"></div>
@@ -38,6 +40,8 @@ const Books = function () {
           <p className="desc">Czy można dotknąć słońca?</p>
         </div>
       </div>
+
+      {/* 2) Wszystkie nasze pory roku */}
       <div className="book">
         <div className="book-cover wszystkie"></div>
         <div className="book-description">
@@ -62,21 +66,8 @@ const Books = function () {
           </p>
         </div>
       </div>
-      <div className="book">
-        <div className="book-cover jakoś"></div>
-        <div className="book-description">
-          <p className="desc">
-            Wydaje się, że Róża Więdłocha już zasłużyła na własne „długo i
-            szczęśliwie”. Ale co jeśli życie nie przypomina komedii romantycznej
-            i po szczęśliwym zakończeniu następuje jednak jakiś ciąg dalszy? Czy
-            będzie on dla Róży łaskawy? W życie bohaterki zostaje wplątana już
-            nie tylko koszmarna młodsza siostra, która ukradła jej narzeczonego,
-            ale i śliczna nowa historyczka, przystojny nauczyciel muzyki i dawna
-            miłość Dominika. Co spotka Różę? Jakie jeszcze niespodzianki los
-            szykuje jej przed napisami końcowymi?
-          </p>
-        </div>
-      </div>
+
+      {/* 3) Jesteś muzyką */}
       <div className="book">
         <div className="book-cover jesteś"></div>
         <div className="book-description">
@@ -110,6 +101,26 @@ const Books = function () {
           </p>
         </div>
       </div>
+
+      {/* 4) Dziewczyna bez serca  */}
+      <div className="book">
+        <div className="book-cover dziewczyna"></div>
+        <div className="book-description">
+          <p className="desc">
+            Matylda jest jak wykrywacz kłamstw – od razu wie, kiedy ktoś mówi
+            prawdę, a kiedy się z nią mija. Trudno jej przez to nawiązywać
+            relacje z innymi ludźmi, a tym bardziej stworzyć związek z
+            mężczyzną. Bo przecież każdy czasem kłamie. Prawie każdy – Matylda
+            tego nie potrafi. Właśnie dostała zlecenie, by odkryć tajemnicę
+            zawodowego kłamcy. Jest zabawny, uroczy, umie oczarować innych i
+            wyraźnie gra kogoś innego. Tylko kim naprawdę jest ten, kogo on
+            udaje? Matylda nie da się nikomu oszukać. Problem pojawia się wtedy,
+            kiedy sama zaczyna oszukiwać… własne serce.
+          </p>
+        </div>
+      </div>
+
+      {/* 5) Każdego dnia */}
       <div className="book">
         <div className="book-cover każdego"></div>
         <div className="book-description">
@@ -132,22 +143,8 @@ const Books = function () {
           </p>
         </div>
       </div>
-      <div className="book">
-        <div className="book-cover dziewczyna"></div>
-        <div className="book-description">
-          <p className="desc">
-            Matylda jest jak wykrywacz kłamstw – od razu wie, kiedy ktoś mówi
-            prawdę, a kiedy się z nią mija. Trudno jej przez to nawiązywać
-            relacje z innymi ludźmi, a tym bardziej stworzyć związek z
-            mężczyzną. Bo przecież każdy czasem kłamie. Prawie każdy – Matylda
-            tego nie potrafi. Właśnie dostała zlecenie, by odkryć tajemnicę
-            zawodowego kłamcy. Jest zabawny, uroczy, umie oczarować innych i
-            wyraźnie gra kogoś innego. Tylko kim naprawdę jest ten, kogo on
-            udaje? Matylda nie da się nikomu oszukać. Problem pojawia się wtedy,
-            kiedy sama zaczyna oszukiwać… własne serce.
-          </p>
-        </div>
-      </div>
+
+      {/* 6) Miłość na niby */}
       <div className="book">
         <div className="book-cover miłość"></div>
         <div className="book-description">
@@ -178,6 +175,8 @@ const Books = function () {
           </p>
         </div>
       </div>
+
+      {/* 7) Tajemnica z przeszłości */}
       <div className="book">
         <div className="book-cover tajemnica"></div>
         <div className="book-description">
@@ -208,6 +207,25 @@ const Books = function () {
           </p>
         </div>
       </div>
+
+      {/* 8) Jakoś to będzie, Różo */}
+      <div className="book">
+        <div className="book-cover jakoś"></div>
+        <div className="book-description">
+          <p className="desc">
+            Wydaje się, że Róża Więdłocha już zasłużyła na własne „długo i
+            szczęśliwie”. Ale co jeśli życie nie przypomina komedii romantycznej
+            i po szczęśliwym zakończeniu następuje jednak jakiś ciąg dalszy? Czy
+            będzie on dla Róży łaskawy? W życie bohaterki zostaje wplątana już
+            nie tylko koszmarna młodsza siostra, która ukradła jej narzeczonego,
+            ale i śliczna nowa historyczka, przystojny nauczyciel muzyki i dawna
+            miłość Dominika. Co spotka Różę? Jakie jeszcze niespodzianki los
+            szykuje jej przed napisami końcowymi?
+          </p>
+        </div>
+      </div>
+
+      {/* 9) Wszystkie róże świata */}
       <div className="book">
         <div className="book-cover róże"></div>
         <div className="book-description">
@@ -235,6 +253,8 @@ const Books = function () {
           </p>
         </div>
       </div>
+
+      {/* 10) Milion smutnych atomów */}
       <div className="book">
         <div className="book-cover milion"></div>
         <div className="book-description">
@@ -257,8 +277,37 @@ const Books = function () {
           </p>
         </div>
       </div>
+
+      {/* 11) Milczące słowa — brak w źródłowym kodzie */}
+      <div className="book">
+        <div className="book-cover milczaceSlowa"></div>
+        <div className="book-description">
+          <p className="desc">
+            W świecie Gota noc była dniem, a dzień był śmiercią. Henry Got byłby
+            zapewne nieznośnym człowiekiem. Problem jednak w tym, że nie był
+            człowiekiem.
+          </p>
+          <p className="desc">
+            Henry Got jest wampirem z ponad czterystuletnim stażem, co niejako
+            ułatwiło mu zostanie bardzo poczytnym pisarzem fantasy. A jednak,
+            nawet jego można jeszcze zaskoczyć. Pewnego dnia w poukładane,
+            spokojne życie wampira wkracza Zuzanna. Henry wie, że oto zaczyna
+            spełniać się przepowiednia sybilli. Po wielu latach oczekiwania
+            poznał kobietę mającą światło pod skórą, która przyniesie mu śmierć.
+            Kobietę, która sprawi, że nic już nie będzie takie samo. Pojawienie
+            się dziewczyny z przepowiedni zatrzęsie podwalinami magicznego
+            świata. Aby zachować równowagę między dobrem a złem, na Zuzannę
+            zaczynają polować nie tylko wampiry, ale również elfy, wilkołaki,
+            fanatyczny odłam egzorcystów i tajemnicze stowarzyszenie łowców
+            wampirów
+          </p>
+          <p className="desc">Czy Henry’emu uda się ustrzec ją od śmierci?</p>
+        </div>
+      </div>
+
       <Buy />
     </div>
   );
 };
+
 export default Books;
