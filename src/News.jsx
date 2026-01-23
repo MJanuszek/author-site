@@ -16,22 +16,26 @@ const News = function () {
           oraz Augustem Piątkowskim z "Dziewczyny bez serca".{" "}
         </p>
       </div>
+
       {/* ----- */}
-      <div className="link-vote">
-        <a
-          href="https://www.ksiazkiroku.pl/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="award-link"
-          aria-label="Książki Roku – przejdź do strony"
-        >
-          <img
-            src="src/assets/ksiazkiroku.png"
-            alt="Książki Roku – nagroda literacka"
-            className="award-image"
-          />
-        </a>
+      <div className="vote">
+        <div className="img-vote">
+          <a
+            href="https://www.ksiazkiroku.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="vote-link"
+          >
+            Książki Roku – zagłosuj
+          </a>
+          <div
+            className="vote-image"
+            role="img"
+            aria-label="Książki Roku – nagroda literacka"
+          ></div>
+        </div>
       </div>
+
       {/* ----- */}
       <Crossover />
       {/* ------ */}
