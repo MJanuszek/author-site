@@ -1,11 +1,26 @@
 @import "colors&fonts";
 
+/* =========================
+   GLOBAL SAFETY (mobile overflow)
+   ========================= */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* =========================
+   BOOKS PAGE
+   ========================= */
 .books-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .books-title {
@@ -24,12 +39,17 @@
   background-image: url("../assets/bg04.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 12px;
   margin: 1rem auto;
+
   display: flex;
   flex-direction: column; // MOBILE
   align-items: center;
   justify-content: flex-start;
+
+  /* critical: prevent any child from forcing horizontal scroll */
+  overflow: hidden;
 }
 
 .book-description {
@@ -41,6 +61,10 @@
   letter-spacing: 0.05rem;
   line-height: 1.6;
   text-align: justify;
+
+  /* critical: break long strings on mobile */
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .desc {
@@ -75,7 +99,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.495);
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem; // odstęp od opisu na mobilce
+  margin-bottom: 1.5rem; // space from description on mobile
 }
 
 /* Okładki */
@@ -109,20 +133,18 @@
 .milion {
   background-image: url("../assets/covers/milion.jpg");
 }
-
 .milczaceSlowa {
   background-image: url("../assets/covers/słowa.jpg");
 }
 
 /* ====== TABLET (>= 768px) ====== */
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .books-title {
     font-size: 1.8rem;
   }
 
   .book {
-    flex-direction: row; // obok siebie: okładka + opis
+    flex-direction: row; // cover + description side by side
     align-items: flex-start;
     justify-content: center;
     padding: 2rem;
@@ -143,7 +165,6 @@
 }
 
 /* ====== DESKTOP (>= 1024px) ====== */
-
 @media (min-width: 1024px) {
   .books-title {
     font-size: 2rem;
@@ -164,17 +185,24 @@
   }
 }
 
-// ------
-@import "colors&fonts";
-
+/* =========================
+   QUOTES
+   ========================= */
 .quotes-bg {
+  /* safer than 100vh on mobile browsers */
   min-height: 100vh;
+  min-height: 100dvh;
+
   width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4rem 1.5rem;
   background-image: url("../assets/bg07.png");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
 }
 
 .quotes {
@@ -201,6 +229,10 @@
   font-size: 1.2rem;
   line-height: 1.6;
   font-family: $descriptionFont03;
+
+  /* prevent long strings from overflowing */
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .quotes-book {
@@ -272,28 +304,50 @@
   }
 }
 
+/* =========================
+   PLOT EXTRACT SECTION
+   ========================= */
 .plot {
   position: relative;
   background-image: url("../assets/bg09.png");
   background-size: cover;
   background-position: center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100vw;
-  height: 100vh;
+
+  /* key fixes:
+     - avoid 100vw overflow
+     - avoid hard 100vh cropping on mobile
+  */
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  height: auto;
+
   margin: 0 auto;
   font-size: 1.1rem;
   font-family: $accentFont01;
   z-index: 0;
 
+  overflow-x: hidden;
+
   h1 {
     font-size: 1.2rem;
     padding: 1rem;
+    max-width: 900px;
   }
+
   p {
     padding: 1rem;
+    max-width: 900px;
+
+    /* prevent long text / links from overflowing */
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 }
