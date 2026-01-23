@@ -1,4 +1,5 @@
-import "./style/quotes.scss";
+// import "./style/quotes.scss";
+import "./style/books.scss";
 import { Element } from "react-scroll";
 import { useEffect, useState } from "react";
 

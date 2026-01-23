@@ -1,4 +1,4 @@
-import "./style/plotExtract.scss";
+import "./style/books.scss";
 const PlotExtract = function () {
   return (
     <div className="plot">
