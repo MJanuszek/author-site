@@ -1,39 +1,71 @@
 @import "colors&fonts";
 
-.announce {
+/* ============ LAYOUT STRONY ============ */
+
+.news {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+
+  font-family: $titleFont02;
+
   display: flex;
-  justify-content: center;
-  margin: 4rem 0;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2.5rem; /* odstęp między sekcjami */
+}
+
+.news-section {
+  width: 100%;
+
+  padding-top: 6vh;
+}
+
+/* wspólny tytuł sekcji */
+.section-title {
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+}
+
+.section-text {
+  font-family: $descriptionFont03;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0;
+  text-align: justify;
+}
+
+/* ============ ANNOUNCE / PREMIERA ============ */
+
+.announce {
+  display: block;
 }
 
 .announce-card {
-  display: flex;
-  gap: 2rem;
-  max-width: 1100px;
-  width: 100%;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
 }
 
-/* OKŁADKA */
 .announce-cover {
-  width: min(70vw, 420px);
-  aspect-ratio: auto;
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+
+  aspect-ratio: 2 / 3;
   background-position: center;
-  background-size: contain; /* KLUCZ */
+  background-size: contain;
   background-repeat: no-repeat;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.495);
-  border-radius: 8px;
-  flex-shrink: 0; /* NIE pozwala flexowi ściskać */
-  min-height: 40vh; /* TEST */
-  background-color: hotpink;
+
+  overflow: hidden;
 }
 
-/* konkretna okładka */
 .announce-cover--premiere {
   background-image: url("../assets/premiera03.jpg");
 }
 
-/* OPIS */
 .announce-description {
   display: flex;
   flex-direction: column;
@@ -41,318 +73,135 @@
 }
 
 .announce-desc {
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #222;
-}
-.announce-card {
-  display: flex;
-  flex-direction: column; /* ← pion */
-  gap: 2rem;
-  align-items: center; /* centrowanie w poziomie */
-}
-
-/* 📱 MOBILE */
-@media (max-width: 768px) {
-  .announce-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .announce-cover {
-    width: 80vw;
-  }
-}
-
-//
-.news {
-  min-height: auto;
-  width: 100%;
-  max-width: 1100px;
-  margin: 10px auto;
-  padding: 1.5rem 1rem;
-  font-family: $titleFont02;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.event {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // border-bottom: 1px solid black;
-  padding: 1.5rem 1rem;
-  margin-top: 1rem;
-  border-radius: 4px;
-}
-
-.event-foto {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 4 / 3;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 1.5rem;
-}
-
-.event-foto {
-  background-image: url("../assets/cn8iN7Qt.jpg");
-}
-
-.event-description {
-  max-width: 100%;
-  font-size: 0.95rem;
-  padding: 0;
   font-family: $descriptionFont03;
-  line-height: 1.6;
+  line-height: 1.65;
+  font-size: 0.98rem;
+  color: #222;
+  margin: 0;
   text-align: justify;
 }
+
+/* ============ NOWOŚCI ============ */
 
 .event-new-book {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-  margin-top: 2vh;
-  text-align: center;
-
-  h1 {
-    padding: 1rem 0;
-    font-size: 1.3rem;
-  }
-
-  p {
-    padding: 1rem 0;
-    font-size: 0.95rem;
-    font-family: $descriptionFont03;
-    line-height: 1.6;
-    max-width: 700px;
-    text-align: justify;
-  }
 }
 
-.new-book-cover {
-  display: flex;
-  flex-direction: column;
-  width: 70vw;
-  max-width: 300px;
-  aspect-ratio: 2 / 3;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 1.5rem;
+.event-new-book .section-text {
+  max-width: 750px;
 }
 
-.new-book-cover {
-  background-image: url("../assets/new-book.png");
-  border-radius: 12px;
-}
+/* ============ VOTE ============ */
 
-// CROSSOVER COMPONENT
-.crossovers {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 2.5rem 3rem;
-
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 14px;
-
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  // border-bottom: 1px solid black;
-}
-
-.crossovers-title {
-  font-size: 1.8rem;
-  margin-bottom: 0.8rem;
-  color: #111;
-}
-
-.crossovers-intro {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 2rem;
-}
-
-.crossovers-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-
-.crossover-item {
-  padding-left: 1.2rem;
-  border-left: 3px solid #111;
-}
-
-.crossover-book {
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
-  color: #111;
-}
-
-.crossover-desc {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.crossover-desc span {
-  font-weight: 600;
-}
-
-// ----------------------
-.img-vote {
+.vote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.5rem; // space from description on mobile
+}
+
+.vote-card {
+  width: 100%;
+  max-width: 420px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 1rem;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .vote-image {
-  width: 400px;
+  width: 100%;
   aspect-ratio: 2 / 3;
-  height: auto;
+
   background-image: url("../assets/ksiazkiroku.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 8px;
+
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.495);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.55);
-  }
 }
 
-/* === LINK UNDER IMAGE === */
-.vote {
-  height: 80vh;
-  width: 100vw;
-  margin-bottom: 5vh;
-}
 .vote-link {
-  margin-top: 2vh;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 1px;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.25s ease;
-  }
-
-  &:hover {
-    opacity: 1;
-
-    &::after {
-      transform: scaleX(1);
-    }
-  }
+  opacity: 0.9;
 }
 
-// ----------------
+.vote-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
 
-@media (min-width: 768px) and (max-width: 1023px) {
+/* ============ EVENT FOTO ============ */
+
+.event {
+  display: flex;
+  justify-content: center;
+}
+
+.event-foto {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 3;
+
+  background-image: url("../assets/cn8iN7Qt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ============ TABLET+ ============ */
+
+@media (min-width: 768px) {
   .news {
-    max-width: 80vw;
     padding: 2rem 1.5rem;
+    gap: 3rem;
   }
 
-  .event {
-    flex-direction: row; // OBOK SIEBIE: foto + opis
-    align-items: flex-start;
+  .section-title {
+    font-size: 1.55rem;
   }
 
-  .event-foto {
-    max-width: 350px;
-    margin-bottom: 0;
-    margin-right: 2rem;
+  .announce-card {
+    grid-template-columns: minmax(280px, 420px) 1fr;
+    gap: 2rem;
   }
 
-  .event-description {
-    max-width: 50%;
-    padding: 0;
-    font-size: 1rem;
-  }
-
-  .event-new-book {
-    padding: 3rem 2rem;
-
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      padding: 2rem 0;
-      font-size: 1rem;
-    }
-
-    .new-book-cover {
-      width: 100%;
-      max-width: 300px;
-    }
+  .announce-cover {
+    justify-self: start;
   }
 }
 
-/* ====== DESKTOP (>= 1024px) ====== */
+/* ============ DESKTOP ============ */
 
 @media (min-width: 1024px) {
   .news {
-    max-width: 70vw;
     padding: 3rem 2rem;
+    max-width: 1000px;
   }
 
-  .event {
-    padding: 3rem 2rem;
+  .section-title {
+    font-size: 1.75rem;
   }
 
-  .event-foto {
-    max-width: 500px;
-    height: 500px;
-  }
-
-  .event-description {
-    max-width: 50%;
-    padding: 3rem;
-    font-size: 1.05rem;
-  }
-
-  .event-new-book {
-    padding: 4rem 3rem;
-
-    h1 {
-      font-size: 1.8rem;
-    }
-
-    p {
-      font-size: 1.05rem;
-    }
+  .announce-desc,
+  .section-text {
+    font-size: 1.02rem;
   }
 }

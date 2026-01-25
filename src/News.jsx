@@ -4,14 +4,26 @@ import Crossover from "./Crossover";
 
 const News = function () {
   return (
-    <div className="news">
+    <main className="news">
       <Navigation />
-      {/* ------------------------------------------------------------ */}
-      <div className="announce">
+
+      {/* PREMIERA / ZAPOWIEDŹ */}
+      <section
+        className="news-section announce"
+        aria-labelledby="announce-title"
+      >
         <div className="announce-card">
-          <div className="announce-cover announce-cover--premiere"></div>
+          <div
+            className="announce-cover announce-cover--premiere"
+            role="img"
+            aria-label="Okładka: premiera"
+          ></div>
 
           <div className="announce-description">
+            <h2 id="announce-title" className="section-title">
+              Premiera
+            </h2>
+
             <p className="announce-desc">
               Czy można spotkać kogoś po latach… i odkryć, że nic nie jest
               takie, jak zapamiętaliśmy?
@@ -34,46 +46,61 @@ const News = function () {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* ---------------------------------------------------------- */}
-      <div className="event-new-book">
-        <h1>Nowości 2026!</h1>
-        {/* <div className="new-book-cover"></div> */}
-        <p>
+      {/* NOWOŚCI */}
+      <section
+        className="news-section event-new-book"
+        aria-labelledby="newbooks-title"
+      >
+        <h2 id="newbooks-title" className="section-title">
+          Nowości 2026!
+        </h2>
+
+        <p className="section-text">
           W 2026 roku w wydawnictwie Lucky ukażą się dwie moje nowe powieści.
           Wyczekujcie! Będzie się działo... zwłaszcza, jeśli tęsknicie za Leną,
           Dagmarą i Zytą z "Jeszcze będziemy szczęśliwi" i Marcelem Raniuszkiem
-          oraz Augustem Piątkowskim z "Dziewczyny bez serca".{" "}
+          oraz Augustem Piątkowskim z "Dziewczyny bez serca".
         </p>
-      </div>
+      </section>
 
-      {/* ----- */}
-      <div className="vote">
-        <div className="img-vote">
-          <a
-            href="https://www.ksiazkiroku.pl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="vote-link"
-          >
-            Książki Roku – zagłosuj
-          </a>
+      {/* GŁOSOWANIE */}
+      <section className="news-section vote" aria-labelledby="vote-title">
+        <h2 id="vote-title" className="section-title">
+          Książki Roku
+        </h2>
+
+        <a
+          href="https://www.ksiazkiroku.pl/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="vote-card"
+          aria-label="Książki Roku – przejdź do głosowania"
+        >
           <div
             className="vote-image"
             role="img"
             aria-label="Książki Roku – nagroda literacka"
           ></div>
-        </div>
-      </div>
+          <span className="vote-link">Zagłosuj</span>
+        </a>
+      </section>
 
-      {/* ----- */}
-      <Crossover />
-      {/* ------ */}
-      <div className="event">
-        <div className="event-foto"></div>
-      </div>
-    </div>
+      {/* CROSSOVER */}
+      <section className="news-section">
+        <Crossover />
+      </section>
+
+      {/* EVENT FOTO */}
+      <section className="news-section event" aria-label="Wydarzenie">
+        <div
+          className="event-foto"
+          role="img"
+          aria-label="Zdjęcie z wydarzenia"
+        ></div>
+      </section>
+    </main>
   );
 };
 
