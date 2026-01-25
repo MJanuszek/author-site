@@ -1,7 +1,71 @@
 @import "colors&fonts";
 
-/* ====== MOBILE FIRST (domyślnie: telefon) ====== */
+.announce {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
 
+.announce-card {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* OKŁADKA */
+.announce-cover {
+  width: min(70vw, 420px);
+  aspect-ratio: auto;
+  background-position: center;
+  background-size: contain; /* KLUCZ */
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.495);
+  border-radius: 8px;
+  flex-shrink: 0; /* NIE pozwala flexowi ściskać */
+  min-height: 40vh; /* TEST */
+  background-color: hotpink;
+}
+
+/* konkretna okładka */
+.announce-cover--premiere {
+  background-image: url("../assets/premiera03.jpg");
+}
+
+/* OPIS */
+.announce-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.announce-desc {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #222;
+}
+.announce-card {
+  display: flex;
+  flex-direction: column; /* ← pion */
+  gap: 2rem;
+  align-items: center; /* centrowanie w poziomie */
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .announce-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .announce-cover {
+    width: 80vw;
+  }
+}
+
+//
 .news {
   min-height: auto;
   width: 100%;
